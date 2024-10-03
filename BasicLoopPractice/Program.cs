@@ -49,15 +49,21 @@ namespace BasicLoopPractice
 
             //While Loop practicing based on previous for loop
             Console.WriteLine("While Loop Practice Start from here");
+
             Console.WriteLine("Please give value under or equal to 100 for doing increment");
+
             int num = Convert.ToInt32(Console.ReadLine());
+
             while (num <= 100)
             {
                 Console.WriteLine(num);
                 num++;
             }
+
             Console.WriteLine("Please give value over 100 or under 200 for doing decrement");
+
             int numForDecrement = Convert.ToInt32(Console.ReadLine());
+
             while (numForDecrement>= 100 && numForDecrement <= 200)
             {
                 Console.WriteLine(numForDecrement);
@@ -71,12 +77,57 @@ namespace BasicLoopPractice
                 int b = 1;
                 while (b <= 3)
                 {
-                    Console.WriteLine(b);
+                    Console.WriteLine(a+" "+b);
                     b++;
                 }
                 a++;
 
             }
+
+
+
+
+            //Do-While Loop practicing based on previous for loop
+
+            Console.WriteLine("Do-While Loop Practice Start from here");
+            Console.WriteLine("Please give value under or equal to 100 for doing increment");
+            int numForDoWhile = Convert.ToInt32(Console.ReadLine());
+
+            do
+            {
+                Console.WriteLine(numForDoWhile);
+                numForDoWhile++;
+            }
+            while (numForDoWhile <= 100);
+
+            Console.WriteLine("Please give value over 100 or under 200 for doing decrement");
+
+            int numInDoWhileForDecrement = Convert.ToInt32(Console.ReadLine());
+
+            do
+            {
+                Console.WriteLine(numInDoWhileForDecrement);
+                numInDoWhileForDecrement--;
+            }
+            while(numInDoWhileForDecrement >= 100 && numInDoWhileForDecrement<= 200);
+
+
+            Console.WriteLine("It is represent a nested do-while loop");
+            
+            int c = 1;
+            do
+            {
+                int d = 1;
+                do
+                {
+                    Console.WriteLine(c + " " + d);
+                    d++;
+                }
+                while (d <= 3);
+                c++;
+            }
+            while(c <= 3);
+
 
 
 
