@@ -129,6 +129,89 @@ namespace BasicLoopPractice
             while(c <= 3);
 
 
+            //Break Statement
+            Console.WriteLine("Below is showing how break statement work ");
+            for (int i = 1; i < 10; i++)
+            {
+                if(i==5)
+                    break;
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine("Below is showing how break statement work in inner loop");
+            int e = 1;
+            do
+            {
+                int d = 1;
+                do
+                {
+                    if (d == 2) break;
+                    Console.WriteLine(e + " " + d);
+                    d++;
+                }
+                
+                while (d <= 3);
+                
+                if (e == 2) break;
+                e++;
+            }
+           
+            while (e <= 3);
+
+
+            //Continue Statement
+
+            Console.WriteLine("Below is showing how continue statement work");
+            for (int i = 1; i <= 10; i++)
+            {
+                
+                
+                    if (i == 2 )
+                    {
+                        continue;
+                    }
+                    Console.WriteLine(i);
+
+                
+
+            }
+
+
+
+            Console.WriteLine("Below is showing how continue statement work in inner loop");
+            for (int i = 1; i <= 5; i++)
+            {
+                for(int j = 1; j <= 5; j++)
+                {
+                    if (i == 2 && j == 2)
+                    {
+                        continue;
+                    }
+                    Console.WriteLine(i + " " + j);
+                    
+                }
+                
+            }
+
+            //GOTO Statement
+
+            Console.WriteLine("Below is showing how go to statement work");
+             ineligible: Console.WriteLine("You are not eligible to vote !");
+            Console.WriteLine("Enter your age:\n");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            if(age<18)
+            {
+                goto ineligible;
+            }
+            else
+            {
+                Console.WriteLine("You can give vote to your prefered party");
+            }
+
+
+
+
 
 
 
